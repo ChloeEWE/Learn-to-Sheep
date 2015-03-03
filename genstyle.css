@@ -1,0 +1,222 @@
+html {
+    font-size: 12pt;
+    color: #333;
+    background-color: #ddf;
+    
+}
+ 
+h1, h2, h3, h4, h5 {
+    
+    color: black;   
+}    
+/*title*/
+h1 {
+    font-size: 2.5rem;
+    font-family: monospace;
+    padding-left: 2rem;
+    line-height: 0px;   
+}
+
+
+#title aside {
+    line-height: 0px;
+    float:right;
+}
+
+
+body{
+    max-width: 50rem;   
+    margin: auto;
+    background-color: white;
+    height:auto;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-right: 10px  solid #ccf;
+    border-left: 10px  solid #ccf;
+    /*keeps title from breaking*/
+    min-width: 720px;
+    
+}    
+
+p {
+    text-indent: 2em;
+}
+
+div {
+   
+    background-color: #fff;
+    padding: 1em; 
+    margin: 1em;
+    border: solid .5em  #aaccff;
+    border-radius: .5em;
+    overflow: auto;
+   
+}    
+
+/*about stuff*/
+#about {
+    background-color: transparent;
+    border-color:transparent;   
+    border-top:  #aaccff;
+    border-bottom:  #aaccff;
+    overflow:visible;
+}
+/*1st letter crap*/
+#about>:first-letter {
+    font-size: 120%;
+    text-transform: uppercase;
+    
+}
+
+#about>h3:first-letter {
+  
+    font-size: 5rem;
+    line-height: 0px;
+}
+
+span{ color: #113377;
+}
+
+#about h3, #about p {margin-bottom: 0px;}
+
+
+
+#navbar {
+        
+}
+
+
+/*color control*/
+
+/*fonts*/
+
+/*link / nav styling*/
+/*
+#navbar {
+    background-color: hsla(120, 1%, 50%, 0.1);
+    border: .2em solid hsla(120, 40%, 50%, 0.2);
+    border-radius: 2em;
+}
+
+nav li {
+    border-radius: .2em;
+    border-bottom: #555 solid .1em;   
+    border-top: white solid .15em;
+    margin-bottom: .5em;
+    text-align:  center;
+    background-color: hsla(120, 40%, 50%, 0.2);
+}*/
+
+nav li:hover a {
+    transition: .2s;
+    color: #aaccff;
+    
+}
+
+
+
+nav li:hover {
+    background-color: hsla(120, 1%, 50%, 0.1);
+    border: 87em ;
+    border-radius: 2em;
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+nav .justText:hover a{
+    color: hsla(120, 0%, 50%, .2);
+}
+
+nav li a {
+    color:  #555;
+}
+
+.justText {
+    text-align: center;
+    background-color: hsla(120, 1%, 50%, 0.1);
+  
+}
+
+.justText::after {
+    content: "  you are here";
+    font-size: 100%;
+    font-family: monospace;
+    color: black;
+    position:relative;
+    display:block;
+    text-align: center;
+    bottom: .65em;
+    line-height: 0px;
+    
+}
+
+.justText a { 
+    color: hsla(120, 0%, 50%, .2);
+    font-size: 110%; 
+    text-decoration: line-through;
+}
+
+a {
+    color: #558855; 
+}
+
+/*ewww fixes*/
+
+nav li {
+    transition: .5s;
+    list-style:none;   
+    border:.1em transparent;    
+    border-radius: 1em;
+    text-align: center;
+    
+}
+
+nav ul {
+    padding-left: 0px;   
+}    
+
+a {
+    text-decoration: none;
+}
+
+/****standard layout*/
+    
+#decor::after {
+  
+}
+
+#decor{
+    
+    width: ; 
+    border:none;  
+    background-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+}
+
+#navbar {
+    
+    float:right;  
+    width: 25%;
+    margin-top: 0px;
+    
+}
+
+#about {
+    
+    float: left;
+    width: 55%;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+
+#decor div {
+    
+    margin-right: 0px;  
+    margin-bottom: 0px;
+}

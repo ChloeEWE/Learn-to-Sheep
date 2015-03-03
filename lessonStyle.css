@@ -1,0 +1,86 @@
+#switcher {
+    float: none;
+    width:90%;
+    align-self: center;
+    padding: .5em;
+    border: none;
+    background-color: #fff;
+    
+}
+
+#decor {
+    padding-bottom: none;
+    margin:none;
+}
+ 
+#lesson { 
+    margin-top:0px;
+}
+
+
+#switcher img.isButton:hover {
+    transition: .2s;
+    border-radius: 50%;
+    opacity: .3;
+}
+
+#switcher img {
+    transition: .2s;;   
+}
+
+#switcher #back { 
+    float: left
+}
+
+#switcher #next { 
+    float: right;
+}
+
+a.nextLink::before {
+    float:right;
+    content: "Next Lesson";
+    right: 3em;
+    
+}
+a.backLink::after {
+    float:left;
+    content: "Previous Lesson";
+    left: .5em;
+    line-height: 0px;
+    text-decoration: none;
+    transition: 3s;
+    
+}
+
+
+a.backLink:hover::after, a.nextLink:hover::before{
+    text-decoration: underline;
+    transition: 5s;
+}
+
+a.backLink::after, a.nextLink::before {
+    font-size: 100%;
+    font-family: monospace;
+    color: black;
+    position:relative;
+    display:block;
+    text-align: center;
+    top: 1.25em; 
+    line-height: 0px;
+}
+
+
+
+#switcher img {
+    width: 2rem;
+    margin: 0px;
+    border: solid black .2rem;
+    opacity: .4;
+    
+}
+
+#switcher .isButton { 
+    opacity:1;
+}
+
+
