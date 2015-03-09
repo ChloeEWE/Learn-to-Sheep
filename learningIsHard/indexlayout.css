@@ -13,6 +13,7 @@ overflow:visible;
 
 div.button p {
     font-size: 4rem;
+    font-family: "Ubuntu", sans-serif;
     color: #1133ff;
     text-decoration-color: #3355ff;
     text-decoration-line: underline;
