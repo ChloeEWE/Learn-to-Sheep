@@ -1,0 +1,134 @@
+body{
+    overflow: visible;
+     display: block;
+ } 
+
+/*general layout things*/
+
+#centerSidebar {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    border-left: none;
+    border-right: none;
+    width:20%;
+    padding 0px;
+    margin-right: 0px;
+}
+
+#summariesSection {
+    float: left;
+    display: inline-block;
+    width:60%;
+}
+
+
+/*makes the div that fixes floating be not ugly*/
+#fake, #otherList, #lessonList, .summaryText {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    
+}
+
+
+/*center sidebar linksnshiz*/
+
+#centerSidebar ul, #centerSidebar ol {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#centerSidebar li {
+  
+    transition: .5s;
+    list-style:none;   
+    border:.2em solid white; 
+    text-align: center;
+    background-color: white;  
+    color: #555;
+}
+
+#centerSidebar div {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#lessonList {
+    margin-bottom: 1rem ;
+}
+
+#centerSidebar h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    margin: 0px;
+    background-color: hsla(120, 1%, 800%, .5);
+}
+
+#centerSidebar {
+    padding-left: 0px;
+    padding-right: 0px;  
+}
+
+#centerSidebar li:hover a {
+    transition: .2s;
+    color: black;
+}
+
+#centerSidebar li:hover {
+    background-color: white;
+    border: .2em solid white ;
+    border-radius: 2em;
+    border-bottom-color: white;
+    border-top-color: white;
+    background-color: transparent;
+}
+
+
+
+/* lesson summaries*/
+
+#summariesSection {
+    padding: 0px;
+    
+}
+
+.lessonSummary {
+    margin: 0px;
+    margin-bottom: 1rem;
+    background-color: white;
+    border: none;
+}
+
+#summariesSection img {
+    width: 10em;
+    height: 10em;
+}
+
+.summaryText.right {
+    padding-right: 1em;
+}
+
+.summaryText.left {
+    padding-left: 1em;
+}
+
+.summaryText p {
+   text-indent: 0px;
+}
+
+.left .left  { 
+    float: left;
+    text-align: left;
+}
+
+.right .right{
+    float: right;
+    text-align: right;
+}
+

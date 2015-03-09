@@ -13,6 +13,8 @@
         <script src="../GPS.js"></script>
         <script src="../jquery-colors-master/jquery.colors.bundle.min.js"></script>
         <script src="../colorMagic.js"></script>
+        <script src="../layoutFix.js"></script>
+        <script src="../centerLayoutFix.js"></script>
         
     </head>
 
@@ -28,7 +30,7 @@
         <div id = "decor">
     <!-- about section  -->       
         <div id="about">
-            <h3>Starting html CSS and JavaScript</h3>
+            <h3><span class="1st">S</span>tarting html CSS and JavaScript</h3>
             <p> words things how to link stuff</p>
         </div>
     
@@ -50,27 +52,11 @@
         </div>
         </div>
     <!-- lesson summaries -->  
+        <div id="fake">
+            <!-- lesson sidebar --> 
         
-        <div id="summariesSection">
-            
-            <div class = "lessonSummary left" >
-                <a href="#"><img src="#" class="lessonButton"></a>
-                <h4>Lesson title</h4>
-                <p>lesson summary here</p>
-            </div>
-            
-            <div class = "lessonSummary right" >
-                <a href="#"><img src="#" class="lessonButton"></a>
-                <h4>Lesson title</h4>
-                <p>lesson summary here</p>
-            </div>
-    
-        
-        </div>
-        
-    <!-- lesson sidebar --> 
-        
-        <div>
+        <div id="centerSidebar">
+            <div id="lessonList">
             <h5>Web Lesson list</h5>
                 <ol>
             
@@ -79,7 +65,8 @@
                     <a href="#"><li> lesson 3 title</li></a>
                 
                 </ol>
-            
+            </div>
+            <div id="otherList">
             <h5>Outside resources</h5>
                 <ul>
                     
@@ -88,9 +75,32 @@
                     <a href="#"><li> help</li></a>
                     
                 </ul>
+            </div>
+        </div> 
             
+        <div id="summariesSection">
+            
+            <div class = "lessonSummary left" >
+                <a href="#"><img src="#" class="lessonButton"></a>
+            <div class="summaryText">
+                <h4>Lesson title</h4>
+                <p>lesson summary here</p>
+            </div>
+                </div>
+            
+            <div class = "lessonSummary right" >
+                <a href="#"><img src="#" class="lessonButton"></a>
+                <div class="summaryText">
+                <h4>Lesson title</h4>
+                <p>lesson summary here</p>
+            </div>
+            </div>
+    
+        
         </div>
         
+    
+        </div>
     </body>
 
 
