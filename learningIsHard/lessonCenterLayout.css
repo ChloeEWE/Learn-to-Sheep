@@ -108,6 +108,7 @@ body{
 #summariesSection img {
     width: 10em;
     height: 10em;
+    background-color: #ddf;
 }
 
 .summaryText.right {
@@ -132,3 +133,6 @@ body{
     text-align: right;
 }
 
+.summaryText h4 {
+    font-size: 1.1rem;
+}

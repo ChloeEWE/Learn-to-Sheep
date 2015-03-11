@@ -1,44 +1,26 @@
 html {
     font-size: 12pt;
+    font-family: "Lora", serif;
     color: #333;
     background-color: #ddf;
-    font-family: "Lora", serif;
-
+    
 }
-
-
  
 h1, h2, h3, h4, h5 {
-    
+    font-family: "PT Sans", sans-serif;
     color: black;   
-}   
+}
 
 /*title*/
 h1 {
     font-size: 2.5rem;
-    font-family: 'PT Sans', sans-serif;
     padding-left: 2rem;
-    line-height: 1.05em;   
-}
-
-h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    font-family: "PT Sans", sans-serif;
-}
-
-h4 {
-    font-size: 1.1rem;
-    font-family: "PT Sans", sans-serif;
-}
-
-.summaryText p {
-    font-size: 0.9rem;
+    line-height: 0px;   
 }
 
 
 #title aside {
-    line-height: 0px;
+    line-height: 1.1rem;
     float:right;
 }
 
@@ -65,10 +47,10 @@ p {
 div {
    
     background-color: #fff;
-    padding: 1em; 
-    margin: 1em;
-    border: solid .5em  #aaccff;
-    border-radius: .5em;
+    padding: 1rem; 
+    margin: 1rem;
+    border: solid .5rem  #aaccff;
+    border-radius: .5rem;
     overflow: auto;
    
 }    
@@ -77,52 +59,33 @@ div {
 #about {
     background-color: transparent;
     border-color:transparent;   
-    border-top:  #aaccff;
-    border-bottom:  #aaccff;
+    border-top:  .5rem #aaccff solid ;
+    border-bottom: .5rem #aaccff solid;
     overflow:visible;
     margin-right:0px;
 }
 /*1st letter crap*/
-#about:first-letter {
+
+#about>:first-letter {
     font-size: 120%;
     text-transform: uppercase;
-    
+    line-height: 1rem;
 }
 
 #about>h3:first-letter {
-  
     font-size: 5rem;
-    line-height: 0px;
 }
 
-span{ color: #113377;
+span{ 
+    color: #113377;
 }
 
-#about h3, #about p {margin-bottom: 0px;}
-
-
-
-
-/*color control*/
-
-/*fonts*/
-
-/*link / nav styling*/
-/*
-#navbar {
-    background-color: hsla(120, 1%, 50%, 0.1);
-    border: .2em solid hsla(120, 40%, 50%, 0.2);
-    border-radius: 2em;
+#about h3, #about p {
+    margin-bottom: 0px;
 }
 
-nav li {
-    border-radius: .2em;
-    border-bottom: #555 solid .1em;   
-    border-top: white solid .15em;
-    margin-bottom: .5em;
-    text-align:  center;
-    background-color: hsla(120, 40%, 50%, 0.2);
-}*/
+
+/*nav stuff*/
 
 nav li:hover a {
     transition: .2s;
@@ -145,34 +108,33 @@ nav .justText:hover a{
     color: hsla(120, 0%, 50%, .2);
 }
 
-nav li a {
+nav a {
     color:  #555;
-    
 }
 
-.justText {
+li.justText {
     text-align: center;
     background-color: hsla(120, 1%, 800%, .5);
   
 }
 
-.justText::after {
+li.justText::after {
     content: "  You Are Here";
     font-size: 100%;
     font-family: "Source Code Pro";
-    font-weight: 600;
+    font-weight: 500;
     color: black;
     position:relative;
     display:block;
     text-align: center;
-    bottom: .65em;
+    bottom: .65rem;
     line-height: 0px;
     
 }
 
-.justText a { 
+a.justText { 
     color: hsla(120, 0%, 50%, .2);
-    font-size: 110%; 
+    font-size: 100%; 
     text-decoration: line-through;
 }
 
@@ -182,7 +144,7 @@ nav li a {
 nav li {
     transition: .5s;
     list-style:none;   
-    border:.2em solid white; 
+    border:.2rem solid white; 
     text-align: center;
     background-color: white;  
 }
@@ -226,9 +188,11 @@ a:hover {
     float:right;  
     width: 25%;
     margin-top: 0px;
-    border-bottom: transparent;
-    border-top: transparent;
-  
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: none ;
+    border-top: none ;
+   
 }
 
 #about {

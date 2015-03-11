@@ -23,8 +23,8 @@ $(document).ready(function() {
     var thisPage = window.location.pathname.split('/').pop();
     $("[href$='"+thisPage+"']").removeAttr("href");
     
-     $("a").not("[href]").parent("li").addClass("justText");
-   
+        $("a").not("[href]").children("li").addClass("justText");
+        $("a").not("[href]").addClass("justText");
     
     
     

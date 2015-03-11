@@ -1,19 +1,19 @@
 
 
 div.button {
-border-radius: 50% ;
-border: 1rem solid #aaccff;
-margin:none;
-padding:none;
-background-color: transparent;
-transition: 1.5s;
-overflow:visible;
+    border-radius: 50% ;
+    border: 1rem solid #aaccff;
+    margin:none;
+    padding:none;
+    background-color: transparent;
+    transition: 1.5s;
+    overflow:visible;
+    font-family: "PT Sans", sans-serif;
 }
 
 
 div.button p {
     font-size: 4rem;
-    font-family: "Ubuntu", sans-serif;
     color: #1133ff;
     text-decoration-color: #3355ff;
     text-decoration-line: underline;
@@ -42,57 +42,6 @@ div.button p:hover {
     transition: .2s ;
     color: #fff;
 }
-
-
-#CButton::after {
-    transition: .5s;
-    content:"Codeblocks! Fun!";
-    position: relative;
-    left: 1.5rem;
-    bottom: 4rem;
-    line-height: 0px;
-    font-size: 1rem;
-    color: transparent;
-    font-family: monospace;
-}
-
-#WebButton::after {
-    transition: .5s;
-    content:"Brackets! CSS! JavaScript!";
-    color: transparent;  
-    position: relative;
-    left: .4rem;
-    bottom: 4rem;
-    line-height: 0px;
-    font-size: .8rem;
-    transition: .2s;
-    font-family: monospace;
-}
-
-#CButton:hover::after{
-    transition: .2s;
-    content:"Codeblocks! Fun!";
-    position: relative;
-    left: 1.5rem;
-    bottom: 4rem;
-    line-height: 0px;
-    font-size: 1rem;
-    color: black;
-    font-family: monospace;
-}
-
-#WebButton:hover::after{
-    content:"Brackets! CSS! JavaScript!";
-    position: relative;
-    color: black;
-    left: .4rem;
-    bottom: 4rem;
-    line-height: 0px;
-    font-size: .8rem;
-    transition: .2s;
-    font-family: monospace;
-}
-
 
 
 

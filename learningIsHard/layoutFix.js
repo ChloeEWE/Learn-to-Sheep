@@ -3,41 +3,37 @@ $(document).ready(function() {
     //fixes sizings
     
     fixSize();
-    
+    fixNavAndAbout();
     //makes button height = to width
-{
-    var buttonWidth = $("#CButton").width();
+
+    
+    $(".button").each(function(){
+    var buttonWidth = $(this).width();
  
-    $(".button").css("height", buttonWidth);
-}
+    $(this).css("height", buttonWidth);
+});
     
     //makes about and nav equal
-    
+function fixNavAndAbout (){      
     var aboutHeight = $("#about").css("height");
     var aboutHeightNum = parseInt(aboutHeight, 10);
+    
+    
     var navHeight = $("#navbar").css("height");
     var navHeightNum = parseInt(navHeight, 10);
-    var difference = aboutHeightNum-navHeightNum;
-    var navMargin = difference/2;
-    var navsMargin = navMargin+"px";
-    console.log(aboutHeight, navHeight, navsMargin);
-    
-    
-    
-    if(aboutHeightNum > navHeightNum) {
-        $("#navbar").css("height", aboutHeight);
-        $("#navbar nav").css("padding-top", navsMargin);
-    }
     
     if(aboutHeightNum < navHeightNum) {
         $("#about").css("height", navHeight);
+        $("#navbar").css("height", navHeight);
     }
+}    
     
     
     
     //makes nav bigger to size when browser moves
 $(window).resize(function() {
-  fixSize();
+    fixSize();
+    fixNavAndAbout();
 });
     
 function fixSize(){    

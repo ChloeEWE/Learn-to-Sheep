@@ -64,6 +64,9 @@ $("*").not(permaBorder).css("border-color", generalBorder);
     
     $("#navbar, #centerSidebar").css("border-color", darkendAcc);
     
+//keeps nav border clear 
+    $("#navbar").css("border-top-color", "white");
+    $("#navbar").css("border-bottom-color", "white");
     
 //this is the base colors for stuff, because they are done semi-separately?    the complimentay things. 
 //complimentary elements
